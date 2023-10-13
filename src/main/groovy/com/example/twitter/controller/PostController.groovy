@@ -5,6 +5,7 @@ import com.example.twitter.dto.post.AddPostRequestDto
 import com.example.twitter.dto.post.PostDto
 import com.example.twitter.model.User
 import com.example.twitter.service.PostService
+import io.swagger.v3.oas.annotations.tags.Tag
 import org.springframework.data.domain.PageRequest
 import org.springframework.data.domain.Pageable
 import org.springframework.data.domain.Sort
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.*
 
 import javax.validation.Valid
 
+@Tag(name = "Post management", description = "Endpoints for managing posts")
 @RestController()
 @RequestMapping("/posts")
 class PostController {

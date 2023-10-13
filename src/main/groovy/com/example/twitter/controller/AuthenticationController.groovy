@@ -6,11 +6,13 @@ import com.example.twitter.dto.user.UserRegistrationRequestDto
 import com.example.twitter.dto.user.UserResponseDto
 import com.example.twitter.security.AuthenticationService
 import com.example.twitter.service.UserService
+import io.swagger.v3.oas.annotations.tags.Tag
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 
 import javax.validation.Valid
 
+@Tag(name = "Authentication", description = "Endpoints for user registration and authentication")
 @RestController()
 @RequestMapping("/auth")
 class AuthenticationController {

@@ -4,10 +4,12 @@ import com.example.twitter.dto.user.UserRegistrationRequestDto
 import com.example.twitter.dto.user.UserResponseDto
 import com.example.twitter.model.User
 import com.example.twitter.service.UserService
+import io.swagger.v3.oas.annotations.tags.Tag
 import org.springframework.http.HttpStatus
 import org.springframework.security.core.Authentication
 import org.springframework.web.bind.annotation.*
 
+@Tag(name = "Users", description = "Endpoints for user operations")
 @RestController()
 @RequestMapping("/users")
 class UserController {
